@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="market karly 사이트 구현하기" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>Market Karly</title>
+  </head>
 
-<body>
+  <body>
+    <header class="header common">헤더</header>
 
-
-  <section>
-    <div class="swiper-1 product-swiper">
-      <div class="swiper-wrapper">
-          
+    <nav class="navigation common">
+      <h2 class="a11yHidden">메인 메뉴</h2>
+      <div class="category">
+        <div class="buttonWrapper">
+          <button class="button--none button--burger" aria-label="메뉴 열기">
+            <span class="button--burgerBarTop"></span>
+            <span class="button--burgerBarMiddle"></span>
+            <span class="button--burgerBarBottom"></span>
+          </button>
         </div>
-    </div>
-  </section>
-  <section>
-    <div class="swiper-2 product-swiper">
-      <div class="swiper-wrapper">
-          
-        </div>
-    </div>
-  </section>
-  <section>
-    <div class="swiper-3 product-swiper">
-      <div class="swiper-wrapper">
-          
-        </div>
-    </div>
-  </section>
+        <span class="category__text">카테고리</span>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link">신상품</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">베스트</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">알뜰쇼핑</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">특가/혜택</a></li>
+      </ul>
 
+      <button type="button" class="notice">
+        <span class="notice__text"> 샛별·낮</span> 배송안내
+      </button>
+    </nav>
 
-  
-  
-</body>
+    <section class="banner common">베너</section>
+
+    <main class="main common">메인</main>
+
+    <footer class="footer common">푸터</footer>
+  </body>
 </html>
